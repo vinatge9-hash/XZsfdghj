@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Pawsitive Care | Services</title>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <!-- font:  -->
+</head>
+<body style="font-family: 'Inter', sans-serif;" class='bg-white text-slate-700'>
+  <header class='sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-gray-200'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between'>
+      <div class='flex items-center gap-2'>
+        <svg width='34' height='34' viewBox='0 0 24 24' fill='none' aria-label='Pawsitive Care logo'>
+          <path d='M4 14c0-3 3-6 8-6s8 3 8 6-3 6-8 6-8-3-8-6z' fill='#3b82f6'/>
+          <path d='M9 9c0-1.657 1.79-3 4-3s4 1.343 4 3-1.79 3-4 3-4-1.343-4-3z' fill='#e5f0ff'/>
+          <circle cx='7' cy='9' r='1.2' fill='#1e3a8a'/>
+          <circle cx='14' cy='9' r='1.2' fill='#1e3a8a'/>
+        </svg>
+        <span class='text-xl font-extrabold tracking-tight text-blue-700'>Pawsitive Care</span>
+      </div>
+      <nav class='hidden md:flex space-x-8' aria-label='Main navigation'>
+        <a href='index.html' class='text-gray-700 hover:text-blue-600'>Home</a>
+        <a href='services.html' class='text-gray-700 hover:text-blue-600'>Services</a>
+        <a href='about.html' class='text-gray-700 hover:text-blue-600'>About</a>
+        <a href='contact.html' class='text-gray-700 hover:text-blue-600'>Contact</a>
+      </nav>
+      <div class='hidden md:flex items-center'>
+        <a href='checkout.html' class='ml-4 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-sky-500 text-white font-semibold hover:from-blue-600 hover:to-sky-600'>Book Appointment</a>
+      </div>
+      <button id='mobile-menu-button' class='md:hidden flex items-center p-2 rounded-md text-slate-700 hover:bg-slate-100' onclick='toggleMobileMenu()'>
+        <span id='hamburger-icon'>
+          <svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
+            <path d='M4 6h16M4 12h16M4 18h16' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>
+          </svg>
+        </span>
+        <span id='close-icon' class='hidden'>
+          <svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
+            <path d='M6 6l12 12M6 18L18 6' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div id='mobile-menu' class='md:hidden hidden border-t border-gray-200 bg-white'>
+      <a href='index.html' class='block px-4 py-2 text-gray-700 hover:bg-gray-50'>Home</a>
+      <a href='services.html' class='block px-4 py-2 text-gray-700 hover:bg-gray-50'>Services</a>
+      <a href='about.html' class='block px-4 py-2 text-gray-700 hover:bg-gray-50'>About</a>
+      <a href='contact.html' class='block px-4 py-2 text-gray-700 hover:bg-gray-50'>Contact</a>
+      <a href='checkout.html' class='block px-4 py-2 bg-blue-50 text-blue-700 font-semibold'>Book Appointment</a>
+    </div>
+  </header>
+
+  <main class='min-h-screen'>
+    <section class='py-16'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h1 class='text-4xl font-black text-blue-900 reveal'>Our Services</h1>
+        <p class='mt-4 text-lg text-slate-700 max-w-2xl reveal'>Explore premium services crafted to keep dogs happy, healthy, and thriving. Each service is delivered by trained professionals with a focus on safety, comfort, and clear communication with you, the guardian.</p>
+        <div class='mt-8 grid md:grid-cols-3 gap-6'>
+          <!-- Grooming -->
+          <div class='bg-white rounded-xl shadow-md p-6 border-t-4 border-blue-200 reveal'>
+            <img src='https://images.unsplash.com/photo-1752178407704-6a088ede9ef9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxncm9vbWluZy1zZXJ2aWNlfGVufDB8MHx8fDE3NTY4MzQyMjZ8MA&ixlib=rb-4.1.0&q=80&w=1080' alt='Grooming service' class='w-full h-40 object-cover rounded mb-4'>
+            <h3 class='text-xl font-semibold text-blue-700'>Grooming</h3>
+            <p class='text-sm text-slate-600 mt-2'>Luxuriate your pup with a calming bath, coat trim, nail care, ear cleaning, and a soothing scent experience. Our grooming routines are tailored to breed and temperament, ensuring comfort and safety.</p>
+            <div class='mt-4 flex items-center justify-between'>
+              <span class='font-bold text-blue-800'>$120</span>
+              <button data-add-to-cart data-id='grooming' data-name='Grooming' data-price='120' data-image='https://images.pexels.com/photos/33680419/pexels-photo-33680419.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' class='px-4 py-2 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700'>Add to Cart</button>
+            </div>
+          </div>
+          <!-- Daycare -->
+          <div class='bg-white rounded-xl shadow-md p-6 border-t-4 border-blue-200 reveal'>
+            <img src='https://pixabay.com/get/g2b81afd251b347002562655b40697f6654425ffc4142cc1df1a07dbd3062dc8f1a730e6dbf08e835b5a7491825ffdf01ca9b7f9ca9c6337bc0419ec272bea993_640.jpg' alt='Daycare service' class='w-full h-40 object-cover rounded mb-4'>
+            <h3 class='text-xl font-semibold text-blue-700'>Daycare</h3>
+            <p class='text-sm text-slate-600 mt-2'>Structured play, enrichment activities, quiet rest periods, and supervised group socialization. Our daycare ensures balance, safety, and plenty of tail-wags throughout the day.</p>
+            <div class='mt-4 flex items-center justify-between'>
+              <span class='font-bold text-blue-800'>$60/day</span>
+              <button data-add-to-cart data-id='daycare' data-name='Daycare' data-price='60' data-image='https://images.unsplash.com/photo-1631885661099-343c346e7643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxkYXljYXJlLXNlcnZpY2V8ZW58MHwwfHx8MTc1NjgzNDIyOXww&ixlib=rb-4.1.0&q=80&w=1080' class='px-4 py-2 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700'>Add to Cart</button>
+            </div>
+          </div>
+          <!-- Training -->
+          <div class='bg-white rounded-xl shadow-md p-6 border-t-4 border-blue-200 reveal'>
+            <img src='https://images.unsplash.com/photo-1711825049856-24a93ae9de23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHx0cmFpbmluZy1zZXJ2aWNlfGVufDB8MHx8fDE3NTY4MzQyMzB8MA&ixlib=rb-4.1.0&q=80&w=1080' alt='Training service' class='w-full h-40 object-cover rounded mb-4'>
+            <h3 class='text-xl font-semibold text-blue-700'>Training</h3>
+            <p class='text-sm text-slate-600 mt-2'>Positive reinforcement-based sessions, leash manners, impulse control, and specialized lessons for puppies and adults. Tailored plans to match your dog’s needs and pace.</p>
+            <div class='mt-4 flex items-center justify-between'>
+              <span class='font-bold text-blue-800'>$180</span>
+              <button data-add-to-cart data-id='training' data-name='Training' data-price='180' data-image='https://images.pexels.com/photos/33697132/pexels-photo-33697132.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' class='px-4 py-2 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700'>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='bg-slate-900 text-white py-8 mt-16'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center'>
+      <div class='flex items-center gap-2'>
+        <span class='font-semibold'>Pawsitive Care</span>
+      </div>
+      <p class='text-sm'>&copy; 2025 Pawsitive Care. All rights reserved.</p>
+      <div class='flex items-center gap-2'>
+        <a href='https://instagram.com' class='text-white'>Instagram</a>
+        <a href='https://facebook.com' class='text-white'>Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src='js/main.js'></script>
+</body>
+</html>
